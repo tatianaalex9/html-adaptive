@@ -1,0 +1,132 @@
+body {
+	background: #e7e7e7;
+	font-family: sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid #777;
+	padding: 20px;
+}
+
+.logo img {
+	width: 50px;
+	margin-right: 20px;
+}
+
+.logo {
+	display: flex;
+    align-items: center;
+	font-weight: bold;
+}
+
+.account img {
+	width: 50px;
+	margin-left: 20px;
+}
+
+.account {
+	display: flex;
+    align-items: center;
+}
+
+.container {
+	display: flex;
+}
+
+aside {
+	width: 20%;
+	min-width: 200px;
+}
+
+main {
+	width: 80%;
+}
+
+aside ul li {
+	list-style-type: none;
+	padding: 5px 20px;
+}
+
+aside ul li a {
+	display: flex;
+	align-items: center;
+	color: #000;
+	text-decoration: none;
+}
+
+aside ul li a img {
+	margin-right: 10px;
+}
+
+.attach {
+	position: absolute;
+	right: 20px;
+    top: -3px;
+}
+
+.row {
+	display: flex;
+	margin-top: 20px;
+}
+
+.column1 {
+	width: 5%;
+}
+
+.column2 {
+	width: 15%;
+}
+
+.column3 {
+	width: 70%;
+}
+
+.column4 {
+	width: 10%;
+}
+
+.row .column1 img {
+	width: 20px;
+}
+
+.column3 {
+	position: relative;
+	overflow: hidden;
+	text-overflow: elipsis;
+}
+
+.column3 span:nth-child(3) {
+	white-space: nowrap;
+}
+
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width:799px) {
+	.column2 {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width:549px) {
+	aside ul li span {
+		display: none;
+	}
+	aside {
+		width: 10%;
+		min-width: 100px;
+	}
+	main {
+		width: 80%;
+	}
+	.column1 {
+		width: 8%;
+	}
+}

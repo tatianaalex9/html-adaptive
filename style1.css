@@ -1,0 +1,61 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #014242;
+	color: #fff;
+	padding: 100px;
+	font-family: sans-serif;
+}
+
+.nav {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	padding-bottom: 32px;
+}
+
+a {
+    text-decoration: none;
+	color: #fff;
+}
+
+h1 {
+	max-width: 424px;
+    font-size: 35px;
+}
+
+section {
+display: flex;
+align-items: center;
+gap: 25px;
+margin-top: 70px;
+}
+
+.boxing {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	max-width: 600px;
+	justify-content: space-between;
+}
+
+.box {
+	width: 113px;
+    margin-bottom: 8px;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.account {
+	font-size: 15px;
+}
